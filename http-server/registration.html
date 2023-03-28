@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Registration </title>
+    
+</head>
+<style>
+    body {
+      background-image: url('background.jpg');
+      background-size: cover;
+    }
+    </style>
+<body>
+    
+    <div >
+        <div >
+            <div >
+                <h2 style="background-color:black;">
+                  Registration Form
+                </h2>
+                <div >
+                    <div>
+                        <form action="" id="user_form">
+                            <label for="name">
+                                name
+                            </label>
+                            <input required type="text" id="name" name="name"  placeholder="Enter name"><br/>
+                            <label for="email">Email</label>
+                            <input required type="email" id="email" name="email"  placeholder="Enter email"><br/>
+                            <label for="password">
+                                password
+                            </label>
+                            <input required type="password" id="password" name="password"  placeholder="Enter your password"><br/>
+                            <label for="dob" min="18" max="55">
+                                date of birth
+                            </label>
+                            <input required type="date" id="dob" name="dob"  placeholder="dd/mm/yyyy"><br/>
+                        <label for="acceptTerms">Accept  Terms & Conditions</label>
+                            <input type="checkbox" name="acceptTerms" id="acceptTerms">
+                        <button type="submit" id="submit" >OK</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  style="background-color:aqua;">
+            <div>
+                <h2s>Entries</h2>
+                <div id="user-entries"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
