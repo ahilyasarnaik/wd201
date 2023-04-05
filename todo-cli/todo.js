@@ -8,21 +8,21 @@ const todoList = () => {
   };
 
   const overdue = () => {
-    return all.filter((todo) => todo.dueDate < today);
+    return all.filter((todo) => todo.dueDate < Today);
   };
 
   const dueToday = () => {
-    return all.filter((todo) => todo.dueDate == today);
+    return all.filter((todo) => todo.dueDate == Today);
   };
 
   const dueLater = () => {
-    return all.filter((todo) => todo.dueDate > today);
+    return all.filter((todo) => todo.dueDate > Today);
   };
 
   const toDisplayableList = (list) => {
     return list
       .map((todo) =>
-          `${todo.completed ? "[x]" : "[ ]"} ${todo.title} ${todo.dueDate == today ? "" : todo.dueDate}`
+          `${todo.completed ? "[x]" : "[ ]"} ${todo.title} ${todo.dueDate == T  oday ? "" : todo.dueDate}`
       ).join("\n");
 
   };
