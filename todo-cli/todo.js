@@ -8,15 +8,15 @@ const todoList = () => {
   };
 
   const overdue = () => {
-    return all.filter((todo) => todo.dueDate < Today);
+    return all.filter((todo) => todo.dueDate < today);
   };
 
   const dueToday = () => {
-    return all.filter((todo) => todo.dueDate == Today);
+    return all.filter((todo) => todo.dueDate == today);
   };
 
   const dueLater = () => {
-    return all.filter((todo) => todo.dueDate > Today);
+    return all.filter((todo) => todo.dueDate > today);
   };
 
   const toDisplayableList = (list) => {
